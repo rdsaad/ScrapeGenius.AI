@@ -33,7 +33,5 @@ if "dom_content" in st.session_state:
             dom_chunks = split_content(st.session_state.dom_content)
             result = extract_with_ollama(dom_chunks, content_description)
             st.write("Here is your extracted information:")
-            
             st.write(result)
-
             st.write("Let me know if you have any more questions!")
